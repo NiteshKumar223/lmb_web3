@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../constants.dart';
+import 'custom_color.dart';
 
 class NavItem extends StatelessWidget {
   const NavItem({
@@ -16,14 +16,14 @@ class NavItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: tapEvent,
-      hoverColor: Colors.transparent,
+      hoverColor: Colors.white,
       child: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 15),
+        padding: EdgeInsets.symmetric(horizontal: 8),
         child: Text(
           title,
           style: TextStyle(
-            color: kTextColor,
-            fontWeight: FontWeight.w300
+            color: Colors.black,
+            fontWeight: FontWeight.bold,
           ),
         ),
       ),

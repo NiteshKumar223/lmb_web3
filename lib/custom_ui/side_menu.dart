@@ -5,14 +5,19 @@ import 'menu_item.dart';
 class SideMenu extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    final Size s = MediaQuery.of(context).size;
     return Container(
+      width: s.width * 0.5,
       height: double.infinity,
       color: Colors.white,
       child: SafeArea(
         child: SingleChildScrollView(
-          padding: EdgeInsets.all(20),
+          padding: EdgeInsets.all(15),
           child: Column(
             children: [
+
+              SizedBox(height: 10),
+
               NavItem(
                 title: 'Home',
                 tapEvent: () {},
@@ -21,7 +26,14 @@ class SideMenu extends StatelessWidget {
               SizedBox(height: 10),
 
               NavItem(
-                title: 'Donate',
+                title: 'Products',
+                tapEvent: () {},
+              ),
+
+              SizedBox(height: 10),
+              
+              NavItem(
+                title: 'About Us',
                 tapEvent: () {},
               ),
 
@@ -36,13 +48,6 @@ class SideMenu extends StatelessWidget {
               
               NavItem(
                 title: 'Login',
-                tapEvent: () {},
-              ),
-
-              SizedBox(height: 10),
-              
-              NavItem(
-                title: 'Shop',
                 tapEvent: () {},
               ),
             ],

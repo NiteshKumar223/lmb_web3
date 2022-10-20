@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_web/components/main_button.dart';
-import 'package:flutter_web/responsive.dart';
+import 'package:flutter_web/custom_ui/responsive.dart';
 
-import '../../../constants.dart';
-
-class Jumbotron extends StatelessWidget {
-  const Jumbotron({
+class home_page1 extends StatelessWidget {
+  const home_page1({
     Key? key,
   }) : super(key: key);
 
@@ -14,6 +11,7 @@ class Jumbotron extends StatelessWidget {
     Size size = MediaQuery.of(context).size;
 
     return Container(
+
       margin: EdgeInsets.symmetric(vertical: 20, horizontal: 40),
       child: Row(
         children: <Widget>[
@@ -26,7 +24,7 @@ class Jumbotron extends StatelessWidget {
                 children: <Widget>[
                   if (isMobile(context))
                     Image.asset(
-                      'assets/images/main.png',
+                      'assets/images/technology1.png',
                       height: size.height * 0.3,
                     ),
 
@@ -36,17 +34,17 @@ class Jumbotron extends StatelessWidget {
                         TextSpan(
                           text: 'Buy ',
                           style: TextStyle(
-                            fontSize: isDesktop(context) ? 64 : 32,
+                            fontSize: isDesktop(context) ? 50 : 25,
                             fontWeight: FontWeight.w800,
-                            color: kTextColor
+                            color: Colors.black
                           )
                         ),
                         TextSpan(
                           text: 'Cruelty Free',
                           style: TextStyle(
-                            fontSize: isDesktop(context) ? 64 : 32,
+                            fontSize: isDesktop(context) ? 50 : 25,
                             fontWeight: FontWeight.w800,
-                            color: kPrimaryColor
+                            color: Colors.black
                           )
                         ),
                       ]
@@ -54,9 +52,9 @@ class Jumbotron extends StatelessWidget {
                   ),
 
                   Text(
-                    'Makeup Products',
+                    'Technology Products',
                     style: TextStyle(
-                      fontSize: isDesktop(context) ? 64 : 32,
+                      fontSize: isDesktop(context) ? 50 : 25,
                       fontWeight: FontWeight.w800
                     ),
                   ),
@@ -64,7 +62,7 @@ class Jumbotron extends StatelessWidget {
                   Text(
                     'Online Today!',
                     style: TextStyle(
-                      fontSize: isDesktop(context) ? 64 : 32,
+                      fontSize: isDesktop(context) ? 50 : 25,
                       fontWeight: FontWeight.w800
                     ),
                   ),
@@ -72,7 +70,7 @@ class Jumbotron extends StatelessWidget {
                   SizedBox(height: 10),
 
                   Text(
-                    'Help us in making this world a better place for animals.',
+                    'Help us in making this world a better place for Technology.',
                     textAlign: isMobile(context) ? TextAlign.center:TextAlign.start,
                     style: TextStyle(
                       fontSize: isDesktop(context) ? 36 : 18,
@@ -82,24 +80,24 @@ class Jumbotron extends StatelessWidget {
 
                   SizedBox(height: 10),
 
-                  Wrap(
-                    runSpacing: 10,
-                    children: <Widget>[
-                      MainButton(
-                        title: 'GET STARTED',
-                        color: kPrimaryColor,
-                        tapEvent: () {},
-                      ),
+                  // Wrap(
+                  //   runSpacing: 10,
+                  //   children: <Widget>[
+                  //     MainButton(
+                  //       title: 'GET STARTED',
+                  //       color: kPrimaryColor,
+                  //       tapEvent: () {},
+                  //     ),
 
-                      SizedBox(width: 10),
+                  //     SizedBox(width: 10),
 
-                      MainButton(
-                        title: 'WATCH VIDEO',
-                        color: kSecondaryColor,
-                        tapEvent: () {},
-                      )
-                    ],
-                  )
+                  //     MainButton(
+                  //       title: 'WATCH VIDEO',
+                  //       color: kSecondaryColor,
+                  //       tapEvent: () {},
+                  //     )
+                  //   ],
+                  // )
                 ],
               ),
             )
@@ -108,12 +106,12 @@ class Jumbotron extends StatelessWidget {
           if (isDesktop(context) || isTab(context))
             Expanded(
               child: Image.asset(
-                'assets/images/main.png',
+                'assets/images/technology1.png',
                 height: size.height * 0.7,
-              )
+              ),
             )
         ],
-      )
+      ),
     );
   }
 }

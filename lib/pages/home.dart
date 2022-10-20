@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_web/components/footer.dart';
-import 'package:flutter_web/components/header.dart';
-import 'package:flutter_web/components/side_menu.dart';
+import 'package:flutter_web/custom_ui/footer.dart';
+import 'package:flutter_web/custom_ui/header.dart';
+import 'package:flutter_web/custom_ui/side_menu.dart';
 
-import 'components/jumbotron.dart';
+import '../custom_ui/custom_color.dart';
+import 'home_page1.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -29,6 +30,15 @@ class HomeScreen extends StatelessWidget {
       body: SingleChildScrollView(
         child: SafeArea(
           child: Container(
+
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                begin: Alignment.centerLeft,
+                end: Alignment.centerRight,
+                colors: [WebColors.bgcolor2,WebColors.bgcolor1],
+              )
+            ),
+
             width: size.width,
             constraints: BoxConstraints(
               minHeight: size.height
@@ -40,7 +50,7 @@ class HomeScreen extends StatelessWidget {
               children: <Widget>[
                 Header(),
 
-                Jumbotron(),
+                home_page1(),
 
                 Footer()
               ],
