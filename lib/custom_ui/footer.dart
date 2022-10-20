@@ -108,7 +108,7 @@ class DesktopFooter extends StatelessWidget {
                         maxLines: 1,
                         decoration: InputDecoration(
                             icon: Icon(Icons.email, color: WebColors.txtcolor),
-                            border: OutlineInputBorder(),
+                            // border: OutlineInputBorder(),
                             hintText: 'you@example.com',
                             hintStyle: TextStyle(
                                 color: Color.fromARGB(44, 255, 255, 255),
@@ -121,7 +121,7 @@ class DesktopFooter extends StatelessWidget {
                         maxLines: 1,
                         decoration: InputDecoration(
                             icon: Icon(Icons.person, color: WebColors.txtcolor),
-                            border: OutlineInputBorder(),
+                            // border: OutlineInputBorder(),
                             hintText: 'Name',
                             hintStyle: TextStyle(
                                 color: Color.fromARGB(44, 255, 255, 255),
@@ -135,7 +135,7 @@ class DesktopFooter extends StatelessWidget {
                         decoration: InputDecoration(
                             icon:
                                 Icon(Icons.message, color: WebColors.txtcolor),
-                            border: OutlineInputBorder(),
+                            // border: OutlineInputBorder(),
                             hintText: 'Message',
                             hintStyle: TextStyle(
                                 color: Color.fromARGB(44, 255, 255, 255),
@@ -235,7 +235,7 @@ class MobileFooter extends StatelessWidget {
                       maxLines: 1,
                       decoration: InputDecoration(
                           icon: Icon(Icons.email, color: WebColors.txtcolor),
-                          border: OutlineInputBorder(),
+                          // border: OutlineInputBorder(),
                           hintText: 'you@example.com',
                           hintStyle: TextStyle(
                               color: Color.fromARGB(44, 255, 255, 255),
@@ -250,7 +250,7 @@ class MobileFooter extends StatelessWidget {
                       maxLines: 1,
                       decoration: InputDecoration(
                           icon: Icon(Icons.person, color: WebColors.txtcolor),
-                          border: OutlineInputBorder(),
+                          // border: OutlineInputBorder(),
                           hintText: 'Name',
                           hintStyle: TextStyle(
                               color: Color.fromARGB(44, 255, 255, 255),
@@ -265,7 +265,7 @@ class MobileFooter extends StatelessWidget {
                       maxLines: 1,
                       decoration: InputDecoration(
                           icon: Icon(Icons.message, color: WebColors.txtcolor),
-                          border: OutlineInputBorder(),
+                          // border: OutlineInputBorder(),
                           hintText: 'Message',
                           hintStyle: TextStyle(
                               color: Color.fromARGB(44, 255, 255, 255),
