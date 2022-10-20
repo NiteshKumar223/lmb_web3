@@ -21,7 +21,7 @@ class MainButton extends StatelessWidget {
         onPressed: tapEvent,
         style: ButtonStyle(
           backgroundColor: MaterialStateProperty.all<Color>(color),
-          padding: MaterialStateProperty.all(EdgeInsets.symmetric(horizontal: 35, vertical: 15))
+          padding: MaterialStateProperty.all(EdgeInsets.symmetric(horizontal: 30, vertical: 15))
         ),
         child: Text(
           title,

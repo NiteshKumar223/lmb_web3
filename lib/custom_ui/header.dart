@@ -58,11 +58,14 @@ class Header extends StatelessWidget {
             ),
 
           if (isMobile(context))
-            IconButton(
-              icon: Icon(Icons.menu),
-              onPressed: () {
-                Scaffold.of(context).openEndDrawer();
-              }
+            Padding(
+              padding: const EdgeInsets.only(right: 1),
+              child: IconButton(
+                icon: Icon(Icons.menu),
+                onPressed: () {
+                  Scaffold.of(context).openEndDrawer();
+                }
+              ),
             )
         ],
       ),
