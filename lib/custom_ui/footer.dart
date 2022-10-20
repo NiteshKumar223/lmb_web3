@@ -23,7 +23,6 @@ class DesktopFooter extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       color: WebColors.footercolor,
-      // margin: EdgeInsets.symmetric(vertical: 20, horizontal: 40),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.start,
         children: <Widget>[
@@ -51,17 +50,14 @@ class DesktopFooter extends StatelessWidget {
                         title: 'Twitter',
                         tapEvent: () {},
                       ),
-                      // SizedBox(height: 20),
                       NavItem(
                         title: 'Facebook',
                         tapEvent: () {},
                       ),
-                      // SizedBox(height: 20),
                       NavItem(
                         title: 'Linkedin',
                         tapEvent: () {},
                       ),
-                      // SizedBox(height: 20),
                       NavItem(
                         title: 'Instagram',
                         tapEvent: () {},
@@ -96,7 +92,6 @@ class DesktopFooter extends StatelessWidget {
           //       ],
           //     )),
           Expanded(
-            // flex: 1,
             child: Container(
               child: Padding(
                 padding: const EdgeInsets.only(right: 10),
@@ -173,7 +168,6 @@ class MobileFooter extends StatelessWidget {
     return Container(
       width: double.infinity,
       color: WebColors.footercolor,
-      // margin: EdgeInsets.symmetric(vertical: 20, horizontal: 40),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
@@ -301,13 +295,10 @@ class NavItem extends StatelessWidget {
     return InkWell(
       onTap: tapEvent,
       hoverColor: Colors.transparent,
-      // child: Padding(
-      // padding: EdgeInsets.symmetric(horizontal: 10),
       child: Text(
         title,
         style: TextStyle(color: Colors.amber, fontSize: 15),
       ),
-      // ),
     );
   }
 }

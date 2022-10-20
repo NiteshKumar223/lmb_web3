@@ -77,27 +77,7 @@ class home_page1 extends StatelessWidget {
                       fontWeight: FontWeight.w300
                     ),
                   ),
-
                   SizedBox(height: 10),
-
-                  // Wrap(
-                  //   runSpacing: 10,
-                  //   children: <Widget>[
-                  //     MainButton(
-                  //       title: 'GET STARTED',
-                  //       color: kPrimaryColor,
-                  //       tapEvent: () {},
-                  //     ),
-
-                  //     SizedBox(width: 10),
-
-                  //     MainButton(
-                  //       title: 'WATCH VIDEO',
-                  //       color: kSecondaryColor,
-                  //       tapEvent: () {},
-                  //     )
-                  //   ],
-                  // )
                 ],
               ),
             )

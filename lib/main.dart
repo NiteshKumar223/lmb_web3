@@ -8,11 +8,10 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Web',
+      title: 'Lmb Technology',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primaryColor: WebColors.bgcolor1,
